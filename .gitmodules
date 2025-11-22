@@ -1,0 +1,6 @@
+[submodule "nano-vllm"]
+	path = nano-vllm
+	url = git@github.com:GeeeekExplorer/nano-vllm
+[submodule ".devcontainer"]
+	path = .devcontainer
+	url = git@github.com:hayatoshibahara/.devcontainer
