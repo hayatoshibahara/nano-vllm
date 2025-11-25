@@ -3466,10 +3466,10 @@
 🟩 推論の1サイクルを実行完了 (len(token_ids) if token_ids else None)=4
 🟩 Warmed up model on rank 0
 🟩 Allocating KV cache on rank 0
-🟩 Allocated KV cache with 880 blocks on rank 0
+🟩 Allocated KV cache with 875 blocks on rank 0
 🟩 Initialized ModelRunner on rank 0
-🟩 スケジューラを初期化 config.max_num_seqs=512, config.max_num_batched_tokens=16384 config.eos=151645, config.num_kvcache_blocks=880, config.kvcache_block_size=256
-🟩 ブロックマネージャーを初期化開始 num_blocks=880 block_size=256
+🟩 スケジューラを初期化 config.max_num_seqs=512, config.max_num_batched_tokens=16384 config.eos=151645, config.num_kvcache_blocks=875, config.kvcache_block_size=256
+🟩 ブロックマネージャーを初期化開始 num_blocks=875 block_size=256
 🟩 ブロックを初期化開始 block_id=0
 🟩 ブロックを初期化完了 self.block_id=0
 🟩 ブロックを初期化開始 block_id=1
@@ -5220,16 +5220,6 @@
 🟩 ブロックを初期化完了 self.block_id=873
 🟩 ブロックを初期化開始 block_id=874
 🟩 ブロックを初期化完了 self.block_id=874
-🟩 ブロックを初期化開始 block_id=875
-🟩 ブロックを初期化完了 self.block_id=875
-🟩 ブロックを初期化開始 block_id=876
-🟩 ブロックを初期化完了 self.block_id=876
-🟩 ブロックを初期化開始 block_id=877
-🟩 ブロックを初期化完了 self.block_id=877
-🟩 ブロックを初期化開始 block_id=878
-🟩 ブロックを初期化完了 self.block_id=878
-🟩 ブロックを初期化開始 block_id=879
-🟩 ブロックを初期化完了 self.block_id=879
 🟩 ブロックマネージャーを初期化完了
 🟩 スケジューラを初期化完了
 🟩 エンジンの初期化完了
@@ -5288,7 +5278,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5334,7 +5324,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5380,7 +5370,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5426,7 +5416,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5472,7 +5462,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5518,7 +5508,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5564,7 +5554,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5610,7 +5600,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5656,7 +5646,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5702,7 +5692,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5748,7 +5738,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5794,7 +5784,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5840,7 +5830,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5886,7 +5876,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5932,7 +5922,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -5978,7 +5968,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6024,7 +6014,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6070,7 +6060,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6116,7 +6106,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6162,7 +6152,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6208,7 +6198,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6254,7 +6244,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6300,7 +6290,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6346,7 +6336,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6392,7 +6382,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6438,7 +6428,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6484,7 +6474,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6530,7 +6520,7 @@
 🟩 Attention層の順伝播開始 q.shape=torch.Size([1, 16, 128]), k.shape=torch.Size([1, 8, 128]), v.shape=torch.Size([1, 8, 128])
 🟩 現在のコンテキスト取得 _CONTEXT=Context(is_prefill=True, cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), max_seqlen_q=1, max_seqlen_k=1, slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context_lens=None, block_tables=None)
 🟦 コンテキスト情報取得 context.is_prefill=True, context.slot_mapping=tensor([0], device='cuda:0', dtype=torch.int32), context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.context_lens=None, context.block_tables=None
-🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([880, 256, 8, 128]), v_cache.shape=torch.Size([880, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
+🟩 KVキャッシュにキーとバリューを保存開始 key.shape=torch.Size([1, 8, 128]), value.shape=torch.Size([1, 8, 128]), k_cache.shape=torch.Size([875, 256, 8, 128]), v_cache.shape=torch.Size([875, 256, 8, 128]), slot_mapping.shape=torch.Size([1])
 🟩 KVキャッシュにキーとバリューを保存完了
 🟦 PrefillモードでFlashAttentionを実行 context.max_seqlen_q=1, context.cu_seqlens_q=tensor([0, 1], device='cuda:0', dtype=torch.int32), context.max_seqlen_k=1, context.cu_seqlens_k=tensor([0, 1], device='cuda:0', dtype=torch.int32)
 🟩 Attention層の順伝播完了 o.shape=torch.Size([1, 16, 128])
@@ -6567,14 +6557,14 @@
 🟩 コンテキストをリセット
 🟩 推論の1サイクルを実行完了 (len(token_ids) if token_ids else None)=1
 🟩 生成トークンの後処理を開始 len(seqs)=1 len(token_ids)=1
-🟩 トークンを追加 token_id=21089
-🟩 トークンを追加完了 token_id=21089 self.num_tokens=2
+🟩 トークンを追加 token_id=105962
+🟩 トークンを追加完了 token_id=105962 self.num_tokens=2
 🟩 シーケンスのブロックを解放開始 4
 🟩 ブロックを解放開始 block_id=0
 🟩 ブロックを解放完了 block_id=0
 🟩 シーケンスのブロックを解放完了 4
 🟩 生成トークンの後処理完了 len(seqs)=1
-🟩 推論エンジンの1サイクルを実行完了 outputs=[(4, [21089])] num_tokens=2
+🟩 推論エンジンの1サイクルを実行完了 outputs=[(4, [105962])] num_tokens=2
 🟩 スケジューラの完了状態を確認 result=True
 🟩 スケジューラに処理すべきタスクが残っているか確認 res=True
 🟩 テキスト生成を完了 len(outputs)=1
